@@ -3,50 +3,218 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        table {
-            width: 100%;
-        }
-
-        table, th,  td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-       
-        th, td {
-            padding: 15px;
-            text-align: left;
-        }
-    </style>
-    <title>Đây là webiste của Huỳnh Anh Huy</title>
+    <title>Mục tiêu thàng tháng</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.min.css">
+    <!-- bootstrap -->
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap\dist\js/bootstrap.min.js"></script>
+    <!-- bootstrap -->
 </head>
 
 <body>
-    <h1>HTML Table</h1>
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>80</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!--tips: to change the nav placement use .fixed-top,.fixed-bottom,.sticky-top-->
+                    <!-- <a class="navbar-brand" href="#">My Brand</a> -->
+                    <a class="navbar-brand" href="#">
+                        <img src="Images\Logo\logo.jpg" class="d-inline-block align-top" width="70" height="50"
+                            alt="...">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Danh mục</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+                <!-- end navarbar -->
+            </div>
+        </div>
+        <!-- End class col-sm-12 -->
+        <br>
+        <div class="row">
+            <div class="col-sm-7">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!--Carousel Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!--Carousel Items-->
+                    <div class="carousel-inner">
+                        <!--tips: add data-interval="" to a .carousel-item to change the amount of time to delay before the next item.(Default: 5000)-->
+                        <div class="carousel-item active">
+                            <img src="Images/1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carousel Controls-->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+               <!-- end myCarousel -->
+            </div>
+            <!-- end class col-sm-7 -->
+            <div class="col-sm-5">
+                <h1>Danh sách các mục tiêu tháng</h1>
+                <ul class="list-group">
+                    <li class="list-group-item active">Mục Tiêu tháng 4</li>
+                    <li class="list-group-item">Mục Tiêu tháng 5</li>
+                    <li class="list-group-item">Mục Tiêu tháng 6</li>
+                    <li class="list-group-item">Mục Tiêu tháng 7</li>
+                    <li class="list-group-item">Mục Tiêu tháng 8</li>
+                </ul>
+                <!-- end class list-group -->
+            </div>
+            <!-- end class col-sm-5 -->
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Học boostrap 4</div>
+                    <img class="card-img-top" src="Images/3.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Học Nodejs</div>
+                    <img class="card-img-top" src="Images/4.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Học html,css nâng cao</div>
+                    <img class="card-img-top" src="Images/5.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Nâng cao kỹ thuật</div>
+                    <img class="card-img-top" src="Images/4.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Tập GYM</div>
+                    <img class="card-img-top" src="Images/6.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Giảm cân</div>
+                    <img class="card-img-top" src="Images/7.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Đọc nhiều sách</div>
+                    <img class="card-img-top" src="Images/8.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Học Tiếng Anh</div>
+                    <img class="card-img-top" src="Images/9.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+            <div class="col-sm-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cẩn thận hơn</div>
+                    <img class="card-img-top" src="Images/10.jpg" height="100" alt="Card image cap">
+                    <div class="card-body text-primary">
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end class col-sm-3 -->
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <footer style="background-color: aquamarine;">  
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark">huyha.hutech1996@gmail.com</a>
+                  </div>
+                </footer>
+            </div>
+        </div>
+        <!-- End footer -->
+    </div>
 </body>
 
 </html>
