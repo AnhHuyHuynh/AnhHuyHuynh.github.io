@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Comon */
+
+.btn {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.btn--sumary {
+    background-color: #0085FC;
+}
+
+.btn--sumary:hover {
+   opacity: 0.6;
+}
+
+/* Main */
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #0085FC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   font-family: 'Merriweather', serif;
+   text-transform: uppercase;
+}
+
+.avarta {
+    width: 116px;
+    background: url('../Images/avarta.jpg') top center  / contain no-repeat ;;
+    height: 60px;
+    cursor: pointer;
+}
+
+.navbar-list {
+    flex-grow: 1;
+}
+
+
+.navbar-list li {
+    display: inline-block;
+}
+
+.navbar-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+.navbar-list li:hover a {
+    background-color: turquoise;
+    color: bisque;
+}
+
+.search {
+    padding: 0 20px;
+    line-height: 60px;
+
+}
+
+.icon-search i  {
+    font-size: 20px;
+    display: none;
+}
+
+
+/* .search:hover {
+    cursor: pointer;
+    background-color: turquoise;
+} */
+
+.about-me {
+    display: flex;
+    height: 600px;
+    padding-top: 60px;
+
+}
+
+.img-about {
+    background: url('../Images/1.jpg') top center  / cover no-repeat ;
+    flex: 2;
+    width: 100%;
+    padding: 0 10px;
+    border: 10px solid blue;
+    border-radius: 1px;
+    padding-top: 15%;
+}
+
+.story {
+    background-color: royalblue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: sienna;
+    height: 900px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.content-left {
+    background-color: slateblue;
+    flex: 1;
+}
+
+.content-right {
+    background-color: springgreen;
+    flex: 1;
+}
+
+.content-center {
+    background-color: tomato;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#target {
+    flex: 1;
+}
+
+#book {
+    flex: 1;
+}
+
+#interests {
+    flex: 1;
+}
+
+#footer {
+    background-color: yellow;
+    height: 60px;
+    text-align: center;
+}
