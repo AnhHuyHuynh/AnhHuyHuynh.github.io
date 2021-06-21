@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 /* Comon */
 
@@ -38,7 +39,6 @@
 .navbar {
    display: flex;
    align-items: center;
-   font-family: 'Merriweather', serif;
    text-transform: uppercase;
 }
 
@@ -107,10 +107,35 @@
 }
 
 .story {
-    background-color: royalblue;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid palegreen;
+    padding: 10px;
+    background: url(../Images/3.jpg) top right / cover no-repeat;
+}
+
+.story h2 {
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.list-story {
+    align-self: flex-start;
+    padding: 0;
+    margin-top: 10px;
+    margin: 10px 10px;
+}
+
+.list-story li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 254, 248, 0.74);
+    margin-top: 10px;
 }
 
 .content {
@@ -138,6 +163,19 @@
     align-items: center;
 }
 
+.content-left {
+    background: url(../Images/4.jpg)  top center / cover no-repeat;
+}
+
+.content-right {
+    background: url(../Images/5.jpg)   top center / cover no-repeat;
+}
+
+.content-center {
+
+}
+
+
 #target {
     flex: 1;
 }
@@ -154,4 +192,5 @@
     background-color: yellow;
     height: 60px;
     text-align: center;
+    margin-top: 10px;
 }
