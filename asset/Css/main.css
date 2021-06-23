@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: contentFont;
+    src: url(../font/njnaruto.ttf);
+}
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -23,17 +31,35 @@
    opacity: 0.6;
 }
 
+.row {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col {
+    border: 1px solid blue;
+    margin: 10px;
+}
+
+.col-l-3 {
+    width: calc(100% / 3);
+}
+
+
 /* Main */
 
 .header {
     width: 100%;
     height: 60px;
-    background-color: #0085FC;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    background: url(../Images/header.jpg) top center  / cover no-repeat ;
 }
 
 .navbar {
@@ -44,7 +70,7 @@
 
 .avarta {
     width: 116px;
-    background: url('../Images/avarta.jpg') top center  / contain no-repeat ;;
+    background: url('../Images/avarta.jpg') top center  / contain no-repeat ;
     height: 60px;
     cursor: pointer;
 }
@@ -93,17 +119,15 @@
     display: flex;
     height: 600px;
     padding-top: 60px;
-
 }
 
 .img-about {
-    background: url('../Images/1.jpg') top center  / cover no-repeat ;
+    background: url('../Images/1.jpg') top center  / cover no-repeat;
     flex: 2;
     width: 100%;
-    padding: 0 10px;
-    border: 10px solid blue;
     border-radius: 1px;
     padding-top: 15%;
+    border: 6px solid #0085FC;
 }
 
 .story {
@@ -112,67 +136,88 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    border: 10px solid palegreen;
     padding: 10px;
-    background: url(../Images/3.jpg) top right / cover no-repeat;
+    background: url(../Images/boder.jpg)  top center  / cover no-repeat;
+    border: 6px solid #0085FC;
 }
 
 .story h2 {
     font-size: 26px;
-    margin-top: 10px;
     text-transform: uppercase;
+    margin-top: 52px;
 }
 
 .list-story {
     align-self: flex-start;
     padding: 0;
-    margin-top: 10px;
-    margin: 10px 10px;
+    margin: 20px 10px;
 }
 
 .list-story li {
     list-style: none;
-    font-size: 16px;
+    font-size: 45px;
     line-height: 1.5;
-    color: rgba(255, 254, 248, 0.74);
+    color: #000;
     margin-top: 10px;
 }
+
+.list-story li p {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+.list-story:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 
 .content {
-    background-color: sienna;
-    height: 900px;
+    height: 100%;
     display: flex;
     margin-top: 10px;
 }
 
 .content-left {
-    background-color: slateblue;
+    background: url(../Images/5.jpg)  top center / cover no-repeat;
     flex: 1;
-}
-
-.content-right {
-    background-color: springgreen;
-    flex: 1;
-}
-
-.content-center {
-    background-color: tomato;
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content-left {
-    background: url(../Images/4.jpg)  top center / cover no-repeat;
 }
 
 .content-right {
     background: url(../Images/5.jpg)   top center / cover no-repeat;
+    padding-top: 50%;
+    flex: 1;
 }
 
 .content-center {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
 
+.header-content {
+    font-family: contentFont;
+    margin-top: 20px;
+    font-size: 40px;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.img-content {
+    width: 100%;
+}
+
+.img-content:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.content-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 
