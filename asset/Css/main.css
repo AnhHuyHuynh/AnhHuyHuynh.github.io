@@ -176,6 +176,7 @@
     height: 100%;
     display: flex;
     margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .content-left {
@@ -234,8 +235,26 @@
 }
 
 #footer {
-    background-color: yellow;
+    background: url(../Images/footer.jpg) top center / cover no-repeat;
     height: 60px;
-    text-align: center;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#footer .footer-content {
+    color: #fff;
+}
+
+#footer .img-footer {
+    background: url(../Images/logo.jpg) top center / cover no-repeat;
+    height: 51px;
+    width: 51px;
+    margin-right: 10px;
 }
